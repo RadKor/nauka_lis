@@ -6,13 +6,9 @@ def check_pierwsza(liczba):
 
         for i in range(2, liczba):
             if liczba % i == 0:
-                print('nie jest')
-                break
-            elif i == liczba -1:
-                print ('jest zajebiscie')
-                break
-
-
+                return False
+            else:
+                return True
 
     else:
         return False
